@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+    <title>Chi monster Corona Map</title>
+</head>
+
+<body>
+
+    <div id='map'></div>
+</body>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiY2hpbW9uc3RlciIsImEiOiJjbGRiZm56bnQwMDVkM29taXBqZHV0bjlsIn0.zbJjkbuPuVKqiy08uvbA-Q';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/mapbox/dark-v10', // style URL
+        // center: [-74.5, 40], // starting position [lng, lat]
+        zoom: 1, // starting zoom
+    center:[0,20]
+    });
+</script>
+
+<script src="index.js"></script>
+
+</html>
